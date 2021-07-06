@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BCB9FEC-B307-4B53-830D-112159F9834D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HarmonyIOLoader</RootNamespace>
+    <AssemblyName>HarmonyIOLoader</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Console">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.GoogleSheets">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.GoogleSheets.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Input">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Network">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Raknet">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Raknet.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Rcon">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Rcon.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Skeleton">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Skeleton.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Sqlite">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.SteamNetworking">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.SteamNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.System">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Unity">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnityEngine">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Facepunch.UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Data">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Demo">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Demo.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Global">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Harmony">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Localization">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Platform">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Platform.Common">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Platform.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Platform.Steam">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Platform.Steam.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.UI">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Workshop">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.Workshop.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.World">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\Rust.World.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\mapmakingserver\RustDedicated_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APCProcessor.cs" />
+    <Compile Include="APC\CustomAPCSpawner.cs" />
+    <Compile Include="APC\SerializedAPCPath.cs" />
+    <Compile Include="APC\SerializedAPCPathList.cs" />
+    <Compile Include="AutoTurretManager.cs" />
+    <Compile Include="CardReaderMonitor.cs" />
+    <Compile Include="CommandHandler.cs" />
+    <Compile Include="DeployableProcessor.cs" />
+    <Compile Include="IOEntityToWheelSwitchConnection.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Loot\DeskKeycardSpawner.cs" />
+    <Compile Include="MapDataDecompressor.cs" />
+    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="IOEntityProcessor.cs" />
+    <Compile Include="NPCProcessor.cs" />
+    <Compile Include="NPC\NPCSpawner.cs" />
+    <Compile Include="NPC\NPCType.cs" />
+    <Compile Include="NPC\SerializedNPCData.cs" />
+    <Compile Include="NPC\SerializedNPCSpawner.cs" />
+    <Compile Include="OceanPathProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtoBuf\DataFormat.cs" />
+    <Compile Include="ProtoBuf\ImplicitFields.cs" />
+    <Compile Include="ProtoBuf\MemberSerializationOptions.cs" />
+    <Compile Include="ProtoBuf\ProtoContractAttribute.cs" />
+    <Compile Include="ProtoBuf\ProtoMemberAttribute.cs" />
+    <Compile Include="SerializedData.cs" />
+    <Compile Include="SerializedPathList.cs" />
+    <Compile Include="Config.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
